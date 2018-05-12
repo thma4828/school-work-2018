@@ -1,0 +1,34 @@
+//Theodore Margoless 
+1. SELECT id, sname, qty, price FROM store order by sname;
+2. SELECT LIMIT 3 id, sname, qty, price FROM store order by sname;
+3. SELECT DESCLIMIT 3 id, sname, qty, price FROM store order by sname;
+4. SELECT id, sname, qty, price FROM store WHERE price > 1;
+5. SELECT id, sname, qty, price, qty*price FROM store;
+6. SELECT SUM(price) FROM store;
+7. SELECT COUNT(id) FROM store;
+8. SELECT name FROM department;
+9. SELECT SUM(count) FROM enrollment;
+10. SELECT COUNT(id) FROM course;
+11. SELECT COUNT(id) FROM department;
+12. SELECT name FROM department
+	INNER JOIN course ON name="CS" 
+	AND department.primary_key = course.primary_key;
+
+13. SELECT name, count FROM
+	{
+		SELECT name FROM deparment
+			INNER JOIN enrollment ON department.primary_key = 				enrollment.primary_key 
+	}newtable
+	WHERE name != NULL AND count != NULL;
+14. 
+SELECT IN 
+	{SELECT name, count FROM
+		{
+		SELECT name FROM deparment
+			INNER JOIN enrollment ON department.primary_key = 				enrollment.primary_key 
+		}newtable
+		WHERE name != NULL AND count != NULL
+	}newtable
+
+	
+

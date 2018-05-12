@@ -1,0 +1,7 @@
+Theodore Margoles
+
+1. 3 javascript files must be loaded; jquery-3.2.1.slim.min.js, popper.min.js, bootstrap.min.js , 
+as well as a style sheet; bootstrap.min.css
+
+2. Bootstrap grid system is a system of rows and columns to properly allign web features, as well as a host of tools to manipulate items in this grid system. Some of these features include ways to implement layouts that are responsive to the user.
+

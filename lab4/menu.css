@@ -1,0 +1,17 @@
+/*Theodore Margoles
+changes added include: 
+1) changed background color of menu. 
+2)changed background color of menu text. 
+3) changed color of menu text. 
+4)changed color of text text and 
+5) added dotted border around all text items in the text section
+6) colored the dotted border from 5 grey  */
+
+#dmain {position: fixed; width:20%;border-style: solid;  margin-bottom: 5px; margin-left: 5px; margin-right: 5px; padding: 10px;background-color: yellow} 
+div.m_item {padding: 10px; border-style:solid; background-color: green}
+#d1 {border-style: dotted;}
+#d2 {border-style: double;}
+#d3 {border-style: groove;}
+#d4 {border-style: ridge;}
+#text {position: absolute; margin-left: 400px; margin-top: 10px; font-size: 30px; border-style: solid; background-color: orange}	
+p.pt {color: blue; border-style: dotted;border-color: grey}

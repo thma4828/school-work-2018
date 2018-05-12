@@ -1,0 +1,66 @@
+        
+
+
+//PARTIAL OUTPUT OF PRINTING SOME OF THE WEATHER DATA AFTER IT HAS BEEN FORMATED AS JSON OBJECT
+        "temperatureMinTime": 1521115200,
+        "temperatureMax": 59.5,
+        "temperatureMaxTime": 1521140400,
+        "apparentTemperatureMin": 37.31,
+        "apparentTemperatureMinTime": 1521115200,
+        "apparentTemperatureMax": 59.5,
+        "apparentTemperatureMaxTime": 1521140400
+      }
+    ]
+  },
+  "flags": {
+    "sources": [
+      "isd",
+      "nearest-precip",
+      "nwspa",
+      "cmc",
+      "gfs",
+      "hrrr",
+      "madis",
+      "nam",
+      "sref",
+      "darksky"
+    ],
+    "isd-stations": [
+      "720385-99999",
+      "720533-99999",
+      "720534-99999",
+      "720538-99999",
+      "724670-03017",
+      "724679-99999",
+      "724690-23062",
+      "724695-23036",
+      "724699-03065",
+      "724699-99999",
+      "724769-94062",
+      "724769-99999",
+      "999999-23012",
+      "999999-23062",
+      "999999-93002",
+      "999999-94075"
+    ],
+    "units": "us"
+  },
+  "offset": -7
+}
+
+//OUTPUT FROM WEB BROWSER CONSOLE 
+
+
+VM32:7 DeMarcus Ware
+VM32:8 Peyton Manning
+VM32:9 Von Miller
+undefined
+
+
+my dark sky api key: 050eb7926bc40f0b309be1310873e1a4
+
+
+user@cu-cs-vm:~/3308/Lab7$ python -m SimpleHTTPServer 8000
+Serving HTTP on 0.0.0.0 port 8000 ...
+127.0.0.1 - - [08/Mar/2018 15:24:10] "GET /ajax_fcast.html HTTP/1.1" 200 -
+

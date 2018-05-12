@@ -1,0 +1,40 @@
+<!–– Theodore Margoles, thma4828@colorado.edu, worked alone. ––>
+<html>
+<head>
+<title>Hello</title>
+<script src="http://code.jquery.com/jquery-2.2.0.js"></script>
+<script>
+$(document).ready(function() {
+	var url = 'https://api.forecast.io/forecast/050eb7926bc40f0b309be1310873e1a4/40.014984,-105.270546';
+	var d_var;
+	$.ajax({url:url, dataType:"jsonp"}).then(function(data) {
+		console.log(data);
+		$('#results').text('\ntemperature: ');
+		$('#results').append(data.currently.temperature);
+		$('#results').append(', \nhumidity: ');
+		$('#results').append(data.currently.humidity);
+		$('#results').append(', \nsummary: ');
+		$('#results').append(data.currently.summary);
+	})
+})
+</script>
+<script>
+	var text = '{"players": [ \
+{"name": "DeMarcus Ware", "jersey": 94}, \
+{"name": "Peyton Manning", "jersey": 18}, \
+{"name": "Von Miller", "jersey": 58} \
+]}';
+
+
+
+var team = JSON.parse(text);
+console.log(team.players[0].name);
+console.log(team.players[1].name);
+console.log(team.players[2].name);
+</script>
+</head>
+<body>
+	<p>Hello, world.</p>
+	<p id="results">original</p>
+</body>
+</html>
